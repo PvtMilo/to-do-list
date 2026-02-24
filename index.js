@@ -26,7 +26,7 @@ let items = [
 ];
 
 const readData = async () => {
-  const res = await db.query("SELECT * FROM todo");
+  const res = await db.query("SELECT * FROM todo ORDER BY id ASC");
   return res.rows;
 };
 
